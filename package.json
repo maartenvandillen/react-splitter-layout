@@ -52,7 +52,7 @@
     "react": "^15.5.0 || ^16.0.0"
   },
   "scripts": {
-    "prepublish": "webpack --progress",
+    "prepublish": "NODE_OPTIONS=--openssl-legacy-provider npx webpack --progress",
     "clean": "rm -rf ./lib",
     "build": "webpack --progress",
     "lint": "eslint '@(src|test|example)/**/*.js?'",
